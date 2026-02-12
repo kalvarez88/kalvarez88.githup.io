@@ -13,3 +13,152 @@ h1, h2, h3, h4, h5, h6 {
     font-family: geist;
     font-weight: 700;
 }
+
+:root {
+    --colorSecundario: #D4932C;
+}
+
+.btn {
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--colorSecundario);
+            border-radius: 50px;
+            text-decoration: none;
+
+
+            &:hover {
+                background: #94671e;
+            }
+        }
+
+/* ---herder--- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    background: #1B4746;
+
+
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 30px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 16px;
+            color: #FFFB20;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+/* ---hero--- */
+
+.hero {
+   
+    background: #1B4746;
+
+    .grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .texto-hero {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            margin: 80px;
+            margin-bottom: 40px;
+    
+            .icono {
+                display: flex;
+                gap: 10px;
+                color: #FFFB20;
+    
+                .star {
+                    width: 16px;
+                }
+            }
+    
+            h1 {
+                color: #fff;
+                margin: 0;
+            }
+    
+            p {
+                color: #fff;
+                font-size: 18px;
+                line-height: 1.4;
+            }
+    
+            .btn-hero {
+                display: flex;
+                gap: 15px;
+    
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: center;
+    
+                    &.segundario {
+                        background: #ffffff86;
+                    }
+                }
+    
+                
+            }
+        }
+    
+        .thoms {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+    
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+}
