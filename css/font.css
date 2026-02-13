@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "geist";
+    src: url(../public/assets/fonts/Geist/Geist-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "geist";
+    src: url(../public/assets/fonts/Geist/Geist-Bold.ttf) format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "rethink-sans";
+    src: url(../public/assets/fonts/Rethink_Sans/RethinkSans-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "rethink-sans";
+    src: url(../public/assets/fonts/Rethink_Sans/RethinkSans-Bold.ttf) format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "rethink-sans italic";
+    src: url(../public/assets/fonts/Rethink_Sans/RethinkSans-italic.ttf) format("truetype");
+    font-weight: 700;
+}
