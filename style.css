@@ -44,6 +44,17 @@ p {
             }
         }
 
+.encabezado {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+
+        .titulo {
+            font-size: 28px;
+        }
+    }        
+
 /* ---herder--- */
 
 .header {
@@ -82,6 +93,8 @@ p {
             display: flex;
             gap: 15px;
             list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
 
             li {
                 a {
@@ -233,6 +246,8 @@ p {
                 
                 .texto-hero {
                     text-align: center;
+                    margin-bottom: 20px;
+
 
                     .icono {
                         justify-content: center;
@@ -258,7 +273,7 @@ p {
 .contenedor-main {
 
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -327,23 +342,46 @@ p {
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    & {
+        grid-template-columns: 60% 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    & {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+
+        .texto-porque {
+
+            gap: 10px;
+
+            h2, .parrafo {
+                text-align: center;
+            }
+        }
+
+        .thom-porque {
+            display: none;
+        }
+    }
+    
+}
+
 }
 
 .metodoTrabajo {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 50px;
 
-    .encabezado {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-
-        .titulo {
-            font-size: 28px;
-        }
-    }
+    
 
     .grid-metodo {
         display: grid;
@@ -365,14 +403,14 @@ p {
         }
 
         .info-metodo {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
 
             .box {
                 background: #fff;
                 display: flex;
+                cursor: pointer;
                 
                 gap: 10px;
                 padding: 20px;
@@ -405,6 +443,35 @@ p {
                     }
                 }
             }
+        }
+
+        @media screen and (max-width: 800px) {
+
+            & {
+                grid-template-columns: 1fr 60%;
+
+                
+            }
+            
+        }
+
+        @media screen and (max-width: 600px) {
+
+            & {
+                grid-template-columns: 1fr;
+
+                .info-metodo {
+                    grid-template-columns: 1fr 1fr;
+
+                .box {
+
+                    .icono-metodo {
+                        display: none;
+                    }
+                }
+                }
+            }
+            
         }
     }
 }
