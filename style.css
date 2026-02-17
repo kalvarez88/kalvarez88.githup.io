@@ -475,3 +475,32 @@ p {
         }
     }
 }
+
+.trabajos {
+
+    .grid-trabajos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .card {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-decoration: none;
+
+            .thoms {
+                width: 100%;
+                overflow: hidden;
+                border-radius: 5px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
