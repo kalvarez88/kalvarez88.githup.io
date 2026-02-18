@@ -492,6 +492,7 @@ p {
             flex-direction: column;
             gap: 5px;
             text-decoration: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
             .thoms {
                 width: 100%;
