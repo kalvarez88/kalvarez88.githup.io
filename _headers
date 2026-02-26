@@ -3,4 +3,4 @@
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' https://formspree.io; style-src 'self' 'unsafe-inline'; font-src 'self' https:; connect-src 'self' https://formspree.io;
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' https://formsprgitee.io; style-src 'self' 'unsafe-inline'; font-src 'self' https:; connect-src 'self' https://formspree.io;
