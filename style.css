@@ -85,6 +85,18 @@ p {
     h2 {
       font-size: 30px;
       color: #fff;
+
+      &::before {
+        content: "";
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+
+        background-image: url(./assets/img/icono-logo.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     p {
