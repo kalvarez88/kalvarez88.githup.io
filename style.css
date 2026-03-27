@@ -752,6 +752,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: center;
 
     .card-cliente {
       display: flex;
@@ -759,6 +760,11 @@ p {
       gap: 10px;
       background: #fff;
       padding: 20px;
+      height: 90%;
+
+      &.activa {
+        height: 100%;
+      }
 
       .calificacion {
         color: var(--colorSecundario);
