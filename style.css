@@ -297,7 +297,7 @@ p {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: center;
 
@@ -310,7 +310,7 @@ p {
       padding: 20px;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-      height: 90%;
+      height: 95%;
 
       &.destacado {
         background: var(--colorPrimario);
